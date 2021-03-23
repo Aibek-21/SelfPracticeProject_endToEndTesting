@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-22T05:35:01.641Z",
+        "line": 17,
+        "name": "add users with all valid info",
+        "description": "",
+        "id": "librarian-add-users;add-users-with-all-valid-info;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class com.cybertek.step_definitions.AddUser_step_definitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:140)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:124)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:132)\r\n\t... 36 more\r\nCaused by: java.lang.NullPointerException\r\n\tat com.cybertek.utilities.Driver.getDriver(Driver.java:24)\r\n\tat com.cybertek.pages.LoginPage.\u003cinit\u003e(LoginPage.java:12)\r\n\tat com.cybertek.step_definitions.AddUser_step_definitions.\u003cinit\u003e(AddUser_step_definitions.java:14)\r\n\t... 41 more\r\n",
+              "duration": 172000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "the librarian is on the users page",
+            "match": {
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.the_librarian_is_on_the_users_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user  click add user",
+            "match": {
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_click_add_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enter full Name \"Erjon Domi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Erjon Domi\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_full_name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enter password \"pass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pass123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter user Group \"Librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Librarian\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_user_group(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enter start Date \"2021-02-21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2021-02-21\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_start_date(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enter email \"erjond@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"erjond@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enter status \"ACTIVE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ACTIVE\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_status(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user enter end date \"2021-03-21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2021-03-21\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_enter_end_date(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enter address \"Connecticut\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Connecticut\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.userEnterAddress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user should be displayed by \"Erjon Domi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Erjon Domi\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.cybertek.step_definitions.AddUser_step_definitions.user_should_be_displayed_by(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Librarian add users",
+    "description": "",
+    "id": "librarian-add-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/AddUser.feature",
+    "tags": []
+  }
+]
